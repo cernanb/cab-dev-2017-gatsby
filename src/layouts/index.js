@@ -4,6 +4,7 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
 import './index.css'
+import Navbar from '../components/Navbar'
 
 const Header = () =>
   <div
@@ -11,39 +12,7 @@ const Header = () =>
       marginBottom: '1rem'
     }}
   >
-    <div
-      style={{
-        margin: '0 auto',
-        padding: '1.45rem 1.0875rem'
-      }}
-    >
-      <h1
-        style={{
-          margin: 0,
-          display: 'inline-block'
-        }}
-      >
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none'
-          }}
-        >
-          CaB
-        </Link>
-      </h1>
-      <Link
-        to="/skills"
-        style={{
-          color: 'white',
-          textDecoration: 'none',
-          float: 'right'
-        }}
-      >
-        Skills
-      </Link>
-    </div>
+    <Navbar />
   </div>
 
 const TemplateWrapper = ({ children }) =>

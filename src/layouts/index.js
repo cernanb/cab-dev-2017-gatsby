@@ -5,25 +5,29 @@ import Helmet from 'react-helmet'
 
 import './index.css'
 
-const Header = () => (
+const Header = () =>
   <div
     style={{
-      marginBottom: '1rem',
+      marginBottom: '1rem'
     }}
   >
     <div
       style={{
         margin: '0 auto',
-        padding: '1.45rem 1.0875rem',
+        padding: '1.45rem 1.0875rem'
       }}
     >
-      <h1 style={{ margin: 0, display: 'inline-block'
- }}>
+      <h1
+        style={{
+          margin: 0,
+          display: 'inline-block'
+        }}
+      >
         <Link
           to="/"
           style={{
             color: 'white',
-            textDecoration: 'none',
+            textDecoration: 'none'
           }}
         >
           CaB
@@ -41,40 +45,37 @@ const Header = () => (
       </Link>
     </div>
   </div>
-)
 
-const TemplateWrapper = ({
-  children
-}) => (
-    <div style={{
-      backgroundColor: 'rgba(52,152,219, 0.6)',
-      height: '100vh',
-    }}>
-      <Helmet
-        title="Gatsby Default Starter"
-        meta={[
-          { name: 'description', content: 'Sample' },
-          { name: 'keywords', content: 'sample, something' },
-        ]}
-      />
-      <Header />
-      <div
-        style={{
-          margin: '0 auto',
-          position: 'relative',
-          width: '1300px',
-          minHeight: '100%',
-          maxWidth: '75%',
-          boxSizing: 'border-box'
-        }}
-      >
-        {children()}
-      </div>
+const TemplateWrapper = ({ children }) =>
+  <div
+    style={{
+      height: '100vh'
+    }}
+  >
+    <Helmet
+      title="Gatsby Default Starter"
+      meta={[
+        { name: 'description', content: 'Sample' },
+        { name: 'keywords', content: 'sample, something' }
+      ]}
+    />
+    <Header />
+    <div
+      style={{
+        margin: '0 auto',
+        position: 'relative',
+        width: '1300px',
+        minHeight: '100%',
+        maxWidth: '75%',
+        boxSizing: 'border-box'
+      }}
+    >
+      {children()}
     </div>
-  )
+  </div>
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.func
 }
 
 export default TemplateWrapper

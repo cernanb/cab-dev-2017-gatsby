@@ -8,7 +8,8 @@ class Typewriter extends Component {
       'build websites',
       'love code',
       'drink coffee',
-      'enjoy javascript'
+      'enjoy javascript',
+      'love react'
     ]
   }
   done = () => {

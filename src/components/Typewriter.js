@@ -9,7 +9,8 @@ class Typewriter extends Component {
       'love code',
       'drink coffee',
       'enjoy javascript',
-      'love react'
+      'love react',
+      'enjoy ruby'
     ]
   }
   done = () => {

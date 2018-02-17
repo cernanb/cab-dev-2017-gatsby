@@ -7,7 +7,7 @@ const Navbar = () =>
       margin: '0 auto',
       padding: '1.45rem 1.0875rem',
       display: 'flex',
-      justifyContent: 'space-between'
+      justifyContent: 'space-between',
     }}
   >
     <h1 style={{ margin: 0, display: 'inline-block' }}>
@@ -18,6 +18,10 @@ const Navbar = () =>
 
     <Link to="/skills" style={{ color: 'white', textDecoration: 'none' }}>
       Skills
+    </Link>
+
+    <Link to="/projects" style={{ color: 'white', textDecoration: 'none' }}>
+      Projects
     </Link>
   </div>
 

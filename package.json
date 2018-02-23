@@ -9,6 +9,7 @@
     "gatsby-link": "^1.0.1",
     "gatsby-plugin-netlify-cms": "^1.0.8",
     "gatsby-plugin-react-helmet": "^1.0.1",
+    "gatsby-source-filesystem": "^1.5.22",
     "react-router-scroll": "^0.4.4",
     "react-typist": "^1.1.1"
   },
